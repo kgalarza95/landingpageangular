@@ -1,22 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuItem } from '../../util/menu_item';
-import { MenuItemComponent } from "../menu-item/menu-item.component";
-import { SubmenuComponent } from "../submenu/submenu.component";
+import { Component, Input, input, OnInit, ViewEncapsulation } from '@angular/core';
+import { MenuItem } from '../util/menu_item';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-header',
-  imports: [MenuItemComponent, SubmenuComponent],
-  standalone: true,
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  selector: 'app-menu-item',
+  imports: [CommonModule],
+  templateUrl: './menu-item.component.html',
+  styleUrl: './menu-item.component.scss',
 })
-export class HeaderComponent implements OnInit {
+export class MenuItemComponent /* implements OnInit */{
 
-  private imgChevron: string = './assets/images/chevron.svg';
+  //public menuItems = input<MenuItem[]>();
+  /* @Input() menuItems: MenuItem[] = [];
 
-  public menuItems = [new MenuItem('Platform', this.imgChevron, 'Chevron for Platform'),
-  new MenuItem('Solutions', this.imgChevron, 'Chevron for Solutions'),
-  new MenuItem('Resources', this.imgChevron, 'Chevron for Resources'),];
+  @Input() label: string = '';
+  @Input() iconSrc: string = './assets/images/chevron.svg';
 
   ngOnInit() {
     console.log('HeaderComponent initialized');
@@ -53,5 +51,5 @@ export class HeaderComponent implements OnInit {
         }, 300);
       });
     });
-  }
+  } */
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubmenuItemComponent } from './submenu-item.component';
+import { FooterLogoComponent } from './footer-logo.component';
 
-describe('SubmenuItemComponent', () => {
-  let component: SubmenuItemComponent;
-  let fixture: ComponentFixture<SubmenuItemComponent>;
+describe('FooterLogoComponent', () => {
+  let component: FooterLogoComponent;
+  let fixture: ComponentFixture<FooterLogoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SubmenuItemComponent]
+      imports: [FooterLogoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SubmenuItemComponent);
+    fixture = TestBed.createComponent(FooterLogoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
