@@ -11,6 +11,7 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     document.body.addEventListener('click', this.playVideos);
+    this.playVideos();
   }
 
   playVideos(): void {
