@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from '../util/menu_item';
-import { MenuItemComponent } from "../menu-item/menu-item.component";
 import { SubmenuComponent } from '../submenu/submenu.component';
 
 @Component({
   selector: 'app-header',
-  imports: [MenuItemComponent, SubmenuComponent],
+  imports: [SubmenuComponent],
   standalone: true,
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

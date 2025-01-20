@@ -1,56 +1,12 @@
-
-<div  class="menu__submenu" aria-labelledby="submenu-platform">
+<div class="menu__submenu" aria-labelledby="submenu-platform">
     <div class="menu__submenu-container">
+
         <div class="menu__submenu-column">
             <h4 class="menu__submenu-title">
                 <img src="./assets/images/icon-navbar/platform.svg" alt="Platform icon" role="img" aria-hidden="true" />
                 Platform
             </h4>
-
-            <!-- <app-submenu-item [subItems]="submenuItems1" /> -->
-
-            <div class="menu__submenu-item">
-                <a href="#">Product Analytics <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Navigate to Product Analytics" role="presentation" aria-hidden="true" />
-                </a>
-                <p>Measure & optimize products</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="Warehouse Connectors">
-                    Warehouse Connectors
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-                <p>Sync trusted data</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="Session Replay">
-                    Session Replay
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-                <p>Watch user journeys</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="Integrations">
-                    Integrations
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-                <p>Connect the tools you love</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="Security and Privacy">
-                    Security & Privacy
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-                <p>Protect customer data</p>
-            </div>
+            <app-submenuitem [subItem]="submenuItems1"></app-submenuitem>
 
         </div>
 
@@ -60,23 +16,8 @@
                 Use Cases
             </h4>
 
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="Acquire New Users">
-                    Acquire New Users
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-                <p>Boost marketing campaigns</p>
-            </div>
+            <app-submenuitem [subItem]="marketingMenuItems"></app-submenuitem>
 
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="Grow Your Users">
-                    Grow Your Users
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-                <p>Engage & retain more users</p>
-            </div>
         </div>
 
 
@@ -84,13 +25,7 @@
             <span class="text-active" aria-label="New feature">New</span>
             <h4>Watch how customers use your product</h4>
 
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="View Session Replay details">
-                    Session Replay
-                    <img src="./assets/images/arrow-narrow-right-black.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-            </div>
+            <app-submenuitem [subItem]="sessionMenuItems"></app-submenuitem>
 
             <img class="menu__submenu-image" src="./assets/images/img_nav001.webp"
                 alt="Screenshot of customer usage analytics dashboard" />
@@ -108,38 +43,8 @@
                 Teams
             </h4>
 
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="View Product team details">
-                    Product
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-            </div>
 
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="View Data Analysts team details">
-                    Data Analysts
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-            </div>
-
-
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="View Marketing team details">
-                    Marketing
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#" aria-label="View Engineering team details">
-                    Engineering
-                    <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Arrow pointing right"
-                        aria-hidden="true" />
-                </a>
-            </div>
+            <app-submenuitem [subItem]="teamMenuItems"></app-submenuitem>
 
         </div>
 
@@ -150,56 +55,17 @@
             </h4>
 
             <nav>
-                <div class="menu__submenu-item">
-                    <a href="#" aria-label="Finance industry">
-                        Finance
-                        <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Finance" />
-                    </a>
-                </div>
-
-                <div class="menu__submenu-item">
-                    <a href="#" aria-label="Media and entertainment industry">
-                        Media & Entertainment
-                        <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Media & Entertainment" />
-                    </a>
-                </div>
-
-                <div class="menu__submenu-item">
-                    <a href="#" aria-label="B2B industry">
-                        B2B
-                        <img src="./assets/images/icon-navbar/chevron-right.svg" alt="B2B" />
-                    </a>
-                </div>
-
-                <div class="menu__submenu-item">
-                    <a href="#" aria-label="Ecommerce industry">
-                        Ecommerce
-                        <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Ecommerce" />
-                    </a>
-                </div>
-
-                <div class="menu__submenu-item">
-                    <a href="#" aria-label="Healthcare industry">
-                        Healthcare
-                        <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Healthcare" />
-                    </a>
-                </div>
+                <app-submenuitem [subItem]="industryMenuItems"></app-submenuitem>
             </nav>
         </section>
 
 
         <div class="menu__submenu-column">
             <h4 class="menu__submenu-title"><img src="./assets/images/icon-navbar/bussiness.svg" alt="Business
-    Size">Business
+        Size">Business
                 Size</h4>
 
-            <div class="menu__submenu-item">
-                <a href="#">Enterprise <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Enterprise" /></a>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">Startups <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Startups" /></a>
-            </div>
+            <app-submenuitem [subItem]="businessMenuItems"></app-submenuitem>
         </div>
 
         <div class="menu__submenu-column menu__submenu-column--last">
@@ -221,50 +87,13 @@
                 Using Mixpanel
             </h4>
 
-            <div class="menu__submenu-item">
-                <a href="#">Docs & Guides <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Docs & Guides " /> </a>
-                <p>Getting started is easy</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">Contact Support <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Contact Support" /> </a>
-                <p>Access personalized help</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">What's New <img src="./assets/images/icon-navbar/chevron-right.svg" alt="What's New " />
-                </a>
-                <p>See the latest product updates</p>
-            </div>
+            <app-submenuitem [subItem]="supportMenuItems"></app-submenuitem>
         </div>
 
         <div class="menu__submenu-column">
             <h4 class="menu__submenu-title"><img src="./assets/images/icon-navbar/community.svg" alt="">Community</h4>
 
-            <div class="menu__submenu-item">
-                <a href="#">Blog <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Explore growth strategies" /> </a>
-                <p>Explore growth strategies</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">Events & Webinars <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Events & Webinars" /> </a>
-                <p>Join us virtually and in person</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">Community <img src="./assets/images/icon-navbar/chevron-right.svg" alt="Community" /> </a>
-                <p>Ask questions and learn</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">Customer Stories <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Customer Stories " /> </a>
-                <p>Impact in action</p>
-            </div>
+            <app-submenuitem [subItem]="growthMenuItems"></app-submenuitem>
         </div>
 
         <div class="menu__submenu-column">
@@ -273,17 +102,7 @@
                 Partnerships
             </h4>
 
-            <div class="menu__submenu-item">
-                <a href="#">Become a Partner <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Become a Partner " /> </a>
-                <p>Partner and grow with us</p>
-            </div>
-
-            <div class="menu__submenu-item">
-                <a href="#">Hire an Expert <img src="./assets/images/icon-navbar/chevron-right.svg"
-                        alt="Hire an Expert " /> </a>
-                <p>Get advanced solution support</p>
-            </div>
+            <app-submenuitem [subItem]="partnerMenuItems"></app-submenuitem>
         </div>
 
         <div class="menu__submenu-column menu__submenu-column--last">
@@ -293,8 +112,7 @@
                         and
                         AI</b></h5>
                 <div class="menu__submenu-item">
-                    <a class="menu__submenu-item text-ligth" href="#">Read Article <img
-                            src="./assets/images/arrow_white.svg" alt="" /> </a>
+                    <a class="menu__submenu-item text-ligth" href="#">Read Article </a>
                 </div>
             </div>
             <div class="background-green ">
@@ -304,8 +122,7 @@
                         perfect
                         <br>pairing</b></h5>
                 <div class="menu__submenu-item">
-                    <a class="menu__submenu-item text-ligth" href="#">Read Article <img
-                            src="./assets/images/arrow_white.svg" alt="" /> </a>
+                    <a class="menu__submenu-item text-ligth" href="#">Read Article </a>
                 </div>
             </div>
         </div>
