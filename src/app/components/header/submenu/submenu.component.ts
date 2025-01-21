@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Item } from '../../util/item';
 import { SubmenuitemComponent } from '../submenuitem/submenuitem.component';
-import { Item } from '../util/item';
+import { SubmenuTitleComponent } from "../submenu-title/submenu-title.component";
 
 @Component({
   selector: 'app-submenu',
-  imports: [SubmenuitemComponent],
+  imports: [SubmenuitemComponent, SubmenuTitleComponent],
   templateUrl: './submenu.component.html',
   styleUrl: './submenu.component.scss'
 })
@@ -72,6 +73,6 @@ export class SubmenuComponent {
     new Item('Become a Partner', this.imgChevron, 'Become a Partner', 'Partner and grow with us'),
     new Item('Hire an Expert', this.imgChevron, 'Hire an Expert', 'Get advanced solution support'),
   ];
-  
-  
+
+
 }

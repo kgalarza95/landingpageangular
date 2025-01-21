@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Item } from '../util/item';
+import { Item } from '../../util/item';
 
 @Component({
   selector: 'app-submenuitem',

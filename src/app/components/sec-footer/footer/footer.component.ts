@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FooterLogoComponent } from '../footer-logo/footer-logo.component';
 import { FooterColumnComponent } from "../footer-column/footer-column.component";
+import { FooterBottomComponent } from "../footer-bottom/footer-bottom.component";
 
 @Component({
   selector: 'app-footer',
-  imports: [FooterLogoComponent, FooterColumnComponent],
+  imports: [FooterLogoComponent, FooterColumnComponent, FooterBottomComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

@@ -1,21 +1,17 @@
-<div class="menu__submenu" aria-labelledby="submenu-platform">
+<div class="menu__submenu" aria-labelledby="submenu-platform" [attr.data-submenu]="0">
     <div class="menu__submenu-container">
 
         <div class="menu__submenu-column">
-            <h4 class="menu__submenu-title">
-                <img src="./assets/images/icon-navbar/platform.svg" alt="Platform icon" role="img" aria-hidden="true" />
-                Platform
-            </h4>
+
+            <app-submenu-title title="Platform" icon="./assets/images/icon-navbar/platform.svg"></app-submenu-title>
             <app-submenuitem [subItem]="submenuItems1"></app-submenuitem>
 
         </div>
 
-        <div class="menu__submenu-column">
-            <h4 class="menu__submenu-title">
-                <img src="./assets/images/icon-navbar/usecase.svg" alt="Use Cases Icon" aria-hidden="true" />
-                Use Cases
-            </h4>
 
+        <div class="menu__submenu-column">
+
+            <app-submenu-title title="Use Cases" icon="./assets/images/icon-navbar/usecase.svg"></app-submenu-title>
             <app-submenuitem [subItem]="marketingMenuItems"></app-submenuitem>
 
         </div>
@@ -34,37 +30,25 @@
     </div>
 </div>
 
-<div class="menu__submenu">
+<div class="menu__submenu" [attr.data-submenu]="1">
     <div class="menu__submenu-container">
         <div class="menu__submenu-column">
 
-            <h4 class="menu__submenu-title">
-                <img src="./assets/images/icon-navbar/teams.svg" alt="Icon representing teams">
-                Teams
-            </h4>
-
-
+            <app-submenu-title title="Teams" icon="./assets/images/icon-navbar/teams.svg"></app-submenu-title>
             <app-submenuitem [subItem]="teamMenuItems"></app-submenuitem>
 
         </div>
 
         <section class="menu__submenu-column" aria-labelledby="industries-title">
-            <h4 id="industries-title" class="menu__submenu-title">
-                <img src="./assets/images/icon-navbar/industries.svg" alt="Icon representing industries">
-                Industries
-            </h4>
 
-            <nav>
-                <app-submenuitem [subItem]="industryMenuItems"></app-submenuitem>
-            </nav>
+            <app-submenu-title title="Industries" icon="./assets/images/icon-navbar/industries.svg"></app-submenu-title>
+            <app-submenuitem [subItem]="industryMenuItems"></app-submenuitem>
         </section>
 
 
         <div class="menu__submenu-column">
-            <h4 class="menu__submenu-title"><img src="./assets/images/icon-navbar/bussiness.svg" alt="Business
-        Size">Business
-                Size</h4>
-
+            <app-submenu-title title="Business Size"
+                icon="./assets/images/icon-navbar/bussiness.svg"></app-submenu-title>
             <app-submenuitem [subItem]="businessMenuItems"></app-submenuitem>
         </div>
 
@@ -79,29 +63,22 @@
     </div>
 </div>
 
-<div class="menu__submenu">
+<div class="menu__submenu" [attr.data-submenu]="2">
     <div class="menu__submenu-container">
         <div class="menu__submenu-column">
-            <h4 class="menu__submenu-title">
-                <img src="./assets/images/icon-navbar/mixpanel.svg" alt=" Using Mixpanel">
-                Using Mixpanel
-            </h4>
-
+            <app-submenu-title title="Using Mixpanel"
+                icon="./assets/images/icon-navbar/mixpanel.svg"></app-submenu-title>
             <app-submenuitem [subItem]="supportMenuItems"></app-submenuitem>
         </div>
 
         <div class="menu__submenu-column">
-            <h4 class="menu__submenu-title"><img src="./assets/images/icon-navbar/community.svg" alt="">Community</h4>
-
+            <app-submenu-title title="Community" icon="./assets/images/icon-navbar/community.svg"></app-submenu-title>
             <app-submenuitem [subItem]="growthMenuItems"></app-submenuitem>
         </div>
 
         <div class="menu__submenu-column">
-            <h4 class="menu__submenu-title">
-                <img src="./assets/images/icon-navbar/partnerships.svg" alt="Partnerships">
-                Partnerships
-            </h4>
-
+            <app-submenu-title title="Partnerships"
+                icon="./assets/images/icon-navbar/partnerships.svg"></app-submenu-title>
             <app-submenuitem [subItem]="partnerMenuItems"></app-submenuitem>
         </div>
 

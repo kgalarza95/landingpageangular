@@ -1,8 +1,5 @@
-
-@use '../ui/styles/variables.scss' as variables;
-@use '../ui/styles/mixins.scss' as mixins;
-
-
+@use '../../ui/styles/variables.scss' as variables;
+@use '../../ui/styles/mixins.scss' as mixins;
 
 .menu {
     @include mixins.flex-commons;
